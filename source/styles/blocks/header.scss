@@ -1,5 +1,6 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: var(--white);
+  color: var(--text-basic);
+  padding: 10px $mobile-side;
 }
+

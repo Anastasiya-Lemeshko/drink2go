@@ -1,0 +1,26 @@
+.catalog-nav {
+  @media #{$mobile-only} {
+    display: none;
+  }
+}
+
+.catalog-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-nav__link {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-basic);
+  text-decoration: none;
+}
+
+.catalog-nav__link--current {
+  color: var(--special-accent);
+}

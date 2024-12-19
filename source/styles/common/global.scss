@@ -1,1 +1,27 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+:root {
+  --white: #ffffff;
+  --special-accent: #7859cf;
+  --text-basic: #333333;
+  --slider-flat-white: #f3ebe1;
+  --slider-lavender: #eae6fc;
+  --slider-espresso: #e5e6e8;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: $primary-font;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media #{$tablet-width} {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
