@@ -2,14 +2,82 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo logo-image" href="#">
+            <picture>
+              <source width="170" height="36" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="82" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img class="logo-image__image" src="images/logo-mobile.svg" width="32" height="36" alt="Логотип магазина Drink2Go.">
+            </picture>
+          </a>
+          <p class="header__logo-text">Интернет-магазин кофейных напитков</p>
+        </div>
+        <nav>
+          <div class="header__catalog-nav catalog-nav">
+            <ul class="catalog-nav__list">
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--current" href="#">Главная</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="#">Каталог</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="#">Доставка</a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link" href="#">О нас</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="header__user-nav user-nav">
+            <ul class="user-nav__list">
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--login" href="#">
+                  <span>Войти</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--cart" href="#">
+                  <span>Корзина</span>
+                </a>
+              </li>
+              <li class="user-nav__item mobile-nav">
+                <button class="mobile-nav__toggle" type="button">
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <ul class="mobile-nav__list">
+                  <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">Главная</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">Каталог</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">Доставка</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">О нас</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+
+      </div>
+    </header>
     <main>
       <h1>Страница для старта</h1>
     </main>
