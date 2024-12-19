@@ -1,6 +1,45 @@
 .header {
   background-color: var(--white);
   color: var(--text-basic);
-  padding: 10px $mobile-side;
+  padding: 0 0 0 $mobile-side;
+  min-height: 60px;
+
+  @media #{$tablet-width} {
+    padding: 0 $mobile-side;
+  }
+
+  @media #{$desktop-width} {
+    padding: 0 $desktop-side;
+  }
 }
 
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__logo-wrapper {
+  @media #{$desktop-width} {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+header__logo {
+  @media #{$tablet-only} {
+    padding-right: 7px;
+  }
+}
+
+.header__logo-text {
+  display: none;
+
+  @media #{$desktop-width} {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

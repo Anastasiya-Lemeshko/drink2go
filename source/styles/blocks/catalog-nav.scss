@@ -5,12 +5,28 @@
 }
 
 .catalog-nav__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media #{$desktop-width} {
+    gap: 20px;
+  }
+}
+
+.catalog-nav__item {
+  height: 80px;
 }
 
 .catalog-nav__link {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 20px;
   font-family: $primary-font;
   font-weight: 500;
   font-size: 12px;
@@ -23,4 +39,5 @@
 
 .catalog-nav__link--current {
   color: var(--special-accent);
+  border-bottom: 2px solid var(--special-accent);
 }
