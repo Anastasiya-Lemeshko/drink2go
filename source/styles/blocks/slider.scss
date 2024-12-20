@@ -215,5 +215,8 @@
   @media #{$desktop-width} {
     display: flex;
     position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

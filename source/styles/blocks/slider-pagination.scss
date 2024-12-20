@@ -1,0 +1,42 @@
+.slider-pagination {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination__button {
+  --button-color: var(--white);
+
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  width: 62px;
+  height: 24px;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 10px, var(--button-color) 10px, var(--button-color) 14px, transparent 14px);
+  border: none;
+  cursor: pointer;
+
+  &:focus-visible,
+  &:hover {
+    --button-color: var(--accent-primary);
+
+    opacity: 0.25;
+  }
+
+  &:active {
+    --button-color: var(--accent-primary);
+  }
+
+  &:disabled {
+    --button-color: var(--grey-basic);
+
+    opacity: 0.5;
+  }
+}
+
+.slider-pagination__button--current {
+  --button-color: var(--accent-primary);
+}
