@@ -1,4 +1,6 @@
 .slider {
+  --liner-height: 188px;
+
   position: relative;
 }
 
@@ -17,6 +19,15 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media #{$tablet-width} {
+    width: 80px;
+    height: calc(100% - var(--liner-height));
+  }
+
+  @media #{$desktop-width} {
+    height: 100%
+  }
 
   &:focus-visible,
   &:hover {
@@ -59,12 +70,26 @@
   padding: 20px 20px 60px;
 
   @media #{$tablet-width} {
-    flex-direction: row;
-    padding: 60px 20px;
+    padding: 60px 20px 0;
   }
 
   @media #{$desktop-width} {
-    padding: 30px 105px 30px 80px;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px 80px 84px 105px;
+    text-align: left;
+  }
+}
+
+.slider__item::after {
+  @media #{$tablet-only} {
+    content: "";
+    width: 100%;
+    height: var(--liner-height);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
   }
 }
 
@@ -79,19 +104,26 @@
   height: 280px;
   object-fit: contain;
 
+  @media #{$tablet-only} {
+    order: 1;
+  }
+
   @media #{$tablet-width} {
+    margin-bottom: 0;
     width: 476px;
     height: 476px;
   }
 
   @media #{$desktop-width} {
-    width: 476px;
-    height: 476px;
+    width: 600px;
+    height: 600px;
   }
 }
 
 .slider__image {
+  position: relative;
   display: block;
+  z-index: 1;
 }
 
 .slider__info {
@@ -103,6 +135,10 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--accent-primary);
+
+  @media #{$desktop-width} {
+    text-align: left;
+  }
 }
 
 .slider__title {
@@ -115,19 +151,41 @@
   color: var(--text-basic);
 
   @media #{$tablet-width} {
+    margin: 0 0 16px;
     font-size: 56px;
     line-height: 80px;
+  }
+
+  @media #{$desktop-width} {
+    text-align: left;
   }
 }
 
 .slider__description {
   margin: 0 0 20px;
+
+  @media #{$tablet-width} {
+    max-width: 610px;
+  }
+
+  @media #{$desktop-width} {
+    margin: 0 0 40px;
+  }
 }
 
 .slider__order-container {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media #{$tablet-width} {
+    margin-bottom: 20px;
+  }
+
+  @media #{$desktop-width} {
+    justify-content: flex-start;
+    margin: 0 0 10px;
+  }
 }
 
 .slider__old-price {
@@ -156,5 +214,6 @@
 
   @media #{$desktop-width} {
     display: flex;
+    position: absolute;
   }
 }
