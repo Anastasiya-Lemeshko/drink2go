@@ -41,8 +41,25 @@
 
   @media #{$desktop-width} {
     display: block;
+    min-width: 135px;
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+.header__user-nav {
+  @media #{$tablet-width} {
+    min-width: 120px;
+  }
+
+  @media #{$desktop-width} {
+    min-width: 270px;
+  }
+}
+
+.header__catalog-nav {
+  @media #{$tablet-width} {
+    min-width: 400px;
   }
 }
 
