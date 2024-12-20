@@ -1,4 +1,6 @@
 .header {
+  --mobile-menu-icon: url("../../icons/burger.svg");
+
   background-color: var(--white);
   color: var(--text-basic);
   padding: 0 0 0 $mobile-side;
@@ -28,7 +30,7 @@
   }
 }
 
-header__logo {
+.header__logo {
   @media #{$tablet-only} {
     padding-right: 7px;
   }
@@ -41,5 +43,24 @@ header__logo {
     display: block;
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+.header__user-nav--opened {
+  --mobile-menu-icon: url("../../icons/cross-mobile.svg");
+}
+
+.header__user-nav--closed + .header__catalog-nav {
+  @media #{$mobile-only} {
+    display: none;
+  }
+}
+
+.header__user-nav--opened + .header__catalog-nav {
+  @media #{$mobile-only} {
+    position: absolute;
+    top: 61px;
+    left: 0;
+    width: 100%;
   }
 }
