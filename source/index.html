@@ -66,13 +66,10 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков «Drink2Go»</h1>
-    <section class="hero">
+    <section class="hero hero--flat-white">
       <div class="hero__wrapper">
         <h2 class="visually-hidden">Новинки</h2>
-
         <div class="hero__slider slider">
-
-
           <button class="slider__button slider__button--prev slider-button-prev" type="button">
             <span class="visually-hidden">Предыдущий товар.</span>
             <svg class="slider__icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.72 0 15 1.32 6.57 10 15 18.68 13.72 20 4 10l9.72-10Z" clip-rule="evenodd"/></svg>
@@ -81,12 +78,8 @@
             <span class="visually-hidden">Следующий товар.</span>
             <svg class="slider__icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.72 0 15 1.32 6.57 10 15 18.68 13.72 20 4 10l9.72-10Z" clip-rule="evenodd"/></svg>
           </button>
-
-
           <ol class="slider__list">
-
-
-            <li class="slider__item slider__item--flat-white slider__item--current">
+            <li class="slider__item slider__item--current">
               <div class="slider__image-container">
                 <picture>
                   <source width="600" height="600" type="image/webp" media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop@1x.webp, images/slider/flat-white-desktop@2x.webp 2x">
@@ -98,7 +91,7 @@
                 </picture>
               </div>
               <div class="slider__content">
-                <p class="slider__info">Новинка!</p>
+                <p class="slider__info title-info">Новинка!</p>
                 <h3 class="slider__title">Декаф Флэт Уайт</h3>
                 <p class="slider__description">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком&nbsp;&mdash; то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
                 <div class="slider__order-container">
@@ -108,8 +101,7 @@
                 </div>
               </div>
             </li>
-
-            <li class="slider__item slider__item--lavender">
+            <li class="slider__item">
               <div class="slider__image-container">
                 <picture>
                   <source width="600" height="600" type="image/webp" media="(min-width: 1440px)" srcset="images/slider/lavender-desktop@1x.webp, images/slider/lavender-desktop@2x.webp 2x">
@@ -121,7 +113,7 @@
                 </picture>
               </div>
               <div class="slider__content">
-                <p class="slider__info">Новинка!</p>
+                <p class="slider__info title-info">Новинка!</p>
                 <h3 class="slider__title">Лавандовый Латте</h3>
                 <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с&nbsp;молоком ламы и&nbsp;лавандовым сиропом унесёт вас прямо на&nbsp;вершину Радужных гор</p>
                 <div class="slider__order-container">
@@ -131,8 +123,7 @@
                 </div>
               </div>
             </li>
-
-            <li class="slider__item slider__item--espresso">
+            <li class="slider__item">
               <div class="slider__image-container">
                 <picture>
                   <source width="600" height="600" type="image/webp" media="(min-width: 1440px)" srcset="images/slider/espresso-desktop@1x.webp, images/slider/espresso-desktop@2x.webp 2x">
@@ -144,7 +135,7 @@
                 </picture>
               </div>
               <div class="slider__content">
-                <p class="slider__info">Новинка!</p>
+                <p class="slider__info title-info">Новинка!</p>
                 <h3 class="slider__title">Тройной Эспрессо</h3>
                 <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из&nbsp;Колумбии покажет вам, что такое настоящая бодрость</p>
                 <div class="slider__order-container">
@@ -154,10 +145,6 @@
                 </div>
               </div>
             </li>
-
-
-
-
           </ol>
           <ol class="slider__pagination slider-pagination">
             <li class="slider-pagination__item">
@@ -177,12 +164,29 @@
             </li>
           </ol>
         </div>
-
-
-
-
       </div>
-
+    </section>
+    <section class="features">
+      <p class="features__info title-info">Преимущества</p>
+      <h2 class="features__title title">Главные причины выбрать Drink2Go</h2>
+      <ul class="features__list">
+        <li class="features__item features__item--time">
+          <h3 class="features__subtitle">Скорость</h3>
+          <p class="features__text">Готовый напиток всегда под рукой — просто открой банку</p>
+        </li>
+        <li class="features__item features__item--comfort">
+          <h3 class="features__subtitle">Удобство</h3>
+          <p class="features__text">Легко помещается и&nbsp;в&nbsp;карман, и&nbsp;в&nbsp;маленькую сумочку</p>
+        </li>
+        <li class="features__item features__item--energy">
+          <h3 class="features__subtitle">Бодрость</h3>
+          <p class="features__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+        </li>
+        <li class="features__item features__item--eco">
+          <h3 class="features__subtitle">Экологичность</h3>
+          <p class="features__text">Вся упаковка сделана из&nbsp;перерабатываемых материалов</p>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
