@@ -2,9 +2,12 @@
 
 :root {
   --white: #ffffff;
-  --accent-dark: #7859cf;
-  --accent-light: #f0ebff;
+  --grey-basic: #bdbdbd;
   --text-basic: #333333;
+  --accent-dark: #593cac;
+  --accent-primary: #7859cf;
+  --accent-middle: #9070ec;
+  --accent-light: #f0ebff;
   --slider-flat-white: #f3ebe1;
   --slider-lavender: #eae6fc;
   --slider-espresso: #e5e6e8;
@@ -20,6 +23,7 @@ body {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
+  color: var(--text-basic);
 
   @media #{$tablet-width} {
     font-size: 20px;

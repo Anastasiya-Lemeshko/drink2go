@@ -50,18 +50,18 @@
 
   &:focus-visible,
   &:hover {
-    color: var(--accent-dark);
+    color: var(--accent-primary);
   }
 
   &:active {
-    color: var(--accent-dark);
+    color: var(--accent-primary);
     background-color: var(--accent-light);
   }
 }
 
 .catalog-nav__link--current {
   @media #{$tablet-width} {
-    color: var(--accent-dark);
-    border-bottom: 2px solid var(--accent-dark);
+    color: var(--accent-primary);
+    border-bottom: 2px solid var(--accent-primary);
   }
 }

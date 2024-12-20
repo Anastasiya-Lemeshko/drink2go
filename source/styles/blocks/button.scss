@@ -1,0 +1,40 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 8px 20px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: none;
+  background-color: var(--accent-primary);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:focus-visible,
+  &:hover {
+    background-color: var(--accent-middle);
+  }
+
+  &:active {
+    background-color: var(--accent-dark);
+  }
+
+  &:disabled {
+    background-color: var(--grey-basic);
+    pointer-events: none;
+  }
+}
+
+.button--disabled {
+  background-color: var(--grey-basic);
+  pointer-events: none;
+}
+
+.button--secondary {
+  color: var(--accent-primary);
+  background-color: var(--white);
+}

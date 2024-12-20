@@ -32,6 +32,8 @@
 }
 
 .user-nav__link {
+  --icon-fill: var(--text-basic);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,23 +59,21 @@
 
   &:focus-visible,
   &:hover {
-    color: var(--accent-dark);
+    --icon-fill: var(--accent-primary);
+
+    color: var(--accent-primary);
   }
 
   &:active {
-    color: var(--accent-dark);
+    --icon-fill: var(--accent-primary);
+
+    color: var(--accent-primary);
     background-color: var(--accent-light);
   }
 }
 
 .user-nav__icon {
-  fill: var(--text-basic);
-}
-
-.user-nav__link:focus-visible .user-nav__icon,
-.user-nav__link:hover .user-nav__icon,
-.user-nav__link:active .user-nav__icon {
-  fill: var(--accent-dark);
+  fill: var(--icon-fill);
 }
 
 .user-nav__text {
