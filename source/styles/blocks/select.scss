@@ -40,6 +40,18 @@
   color: var(--accent-primary);
   text-align: right;
   border: none;
+  border-radius: 4px;
   background-color: transparent;
   cursor: pointer;
+
+  &:focus-visible,
+  &:hover {
+    border: none;
+    outline: none;
+    background-color: var(--accent-light);
+  }
+}
+
+.select:has(.select__control:active)::after {
+  transform: translateY(-3px) rotate(180deg);
 }

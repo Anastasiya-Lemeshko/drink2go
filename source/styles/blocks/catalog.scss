@@ -57,9 +57,15 @@
 .catalog__list {
   display: grid;
   gap: 20px;
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
   list-style-type: none;
+
+  @media #{$tablet-only} {
+    justify-content: center;
+    max-width: 870px;
+    margin: 0 auto 70px;
+  }
 
   @media #{$tablet-width} {
     grid-template-columns: repeat(2, 1fr);
@@ -68,5 +74,12 @@
 
   @media #{$desktop-width} {
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 60px;
+  }
+}
+
+.catalog__item {
+  @media #{$mobile-only} {
+    margin: 0 auto;
   }
 }

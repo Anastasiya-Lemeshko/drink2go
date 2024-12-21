@@ -1,4 +1,6 @@
 .card {
+  display: flex;
+  flex-direction: column;
   font-family: $primary-font;
   max-width: 350px;
   padding: 40px 20px 20px;
@@ -9,6 +11,11 @@
   @media #{$tablet-width} {
     padding: 50px 30px 30px;
   }
+
+  &:focus-within,
+  &:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  }
 }
 
 .card__image-wrapper {
@@ -18,11 +25,24 @@
   @media #{$tablet-width} {
     margin-bottom: 30px;
   }
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__image {
   display: block;
   margin: 0 auto;
+}
+
+.card__content {
+  flex-grow: 1;
 }
 
 .card__title {
@@ -38,6 +58,15 @@
     margin: 0 0 10px;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -62,6 +91,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 4px;
 }
 
 .card__button {

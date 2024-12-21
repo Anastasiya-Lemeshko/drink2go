@@ -16,14 +16,17 @@
   &:focus-visible,
   &:hover {
     background-color: var(--accent-middle);
+    color: var(--white);
   }
 
   &:active {
     background-color: var(--accent-dark);
+    color: var(--white);
   }
 
   &:disabled {
     background-color: var(--grey-basic);
+    color: var(--white);
     pointer-events: none;
   }
 }
@@ -54,3 +57,5 @@
     background-position: center;
   }
 }
+
+
