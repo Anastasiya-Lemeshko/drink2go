@@ -8,6 +8,10 @@
     width: 100%;
     margin-bottom: 20px;
   }
+
+  @media #{$desktop-width} {
+    margin-bottom: 22px;
+  }
 }
 
 .range__inputs {
@@ -15,7 +19,7 @@
   grid-template-columns: 1fr 8px 1fr;
   align-items: center;
   gap: 18px;
-  max-width: 310px;
+  max-width: 320px;
 
   @media #{$tablet-width} {
     gap: 20px;

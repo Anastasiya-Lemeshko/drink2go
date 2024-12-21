@@ -17,7 +17,11 @@
 }
 
 .catalog__filter {
-  margin-bottom: 40px;
+  margin: 0 0 40px;
+
+  @media #{$desktop-width} {
+    margin: 4px 0 0;
+  }
 }
 
 .catalog__info {
@@ -28,6 +32,18 @@
 .catalog__title {
   margin-bottom: 20px;
   text-align: center;
+
+  @media #{$desktop-width} {
+    margin-bottom: 36px;
+  }
+}
+
+.catalog__container {
+  @media #{$desktop-width} {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 30px;
+  }
 }
 
 .catalog__select {
@@ -48,5 +64,9 @@
   @media #{$tablet-width} {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+
+  @media #{$desktop-width} {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
