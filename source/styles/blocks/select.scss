@@ -1,7 +1,9 @@
 .select {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
 
   &::after {
     position: absolute;
@@ -29,6 +31,7 @@
 
 .select__control {
   appearance: none;
+  width: 165px;
   padding: 4px 31px 4px 10px;
   font-family: $primary-font;
   font-weight: 600;

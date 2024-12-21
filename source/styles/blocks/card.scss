@@ -26,31 +26,47 @@
 }
 
 .card__title {
+  display: block;
   margin: 0 0 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   text-decoration: none;
   color: var(--text-basic);
+
+  @media #{$tablet-width} {
+    margin: 0 0 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .card__text {
   margin: 0 0 16px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
+
+  @media #{$tablet-width} {
+    margin: 0 0 20px;
+  }
 }
 
 .card__price {
   font-weight: 600;
   font-size: 20px;
-  line-height: 160%;
+  line-height: 32px;
 }
 
 .card__button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card__button {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .card__button::before {

@@ -24,12 +24,15 @@
 }
 
 .filter__button-container {
-  grid-area: 2 / 1 / 3 / 4;
-  justify-self: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+
+  @media #{$tablet-only} {
+    grid-area: 2 / 1 / 3 / 4;
+    justify-self: center;
+  }
 
   @media #{$tablet-width} {
     flex-direction: row;
