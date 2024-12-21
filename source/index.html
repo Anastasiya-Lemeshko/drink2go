@@ -282,35 +282,30 @@
 
 
 
-          <div class="card-container">
-            <div class="select-wrapper">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="">Сортировать</option>
-                <option value="popular">Популярные</option>
-                <option value="rating">В наличии</option>
-                <option value="cheap">Недорогие</option>
+          <div class="catalog__cards">
+            <div class="catalog__select select">
+              <label class="select__label" for="filter-select">Сортировка:</label>
+              <select class="select__control" id="filter-select">
+                <option value="by-default">по умолчанию</option>
+                <option value="price">по цене</option>
+                <option value="popular">по популярности</option>
               </select>
-              <svg class="select-toggle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="7" fill="none" viewBox="0 0 10 7"><path fill-rule="evenodd" d="m8 0 1.414 1.414-4.707 4.707L0 1.414 1.414 0l3.293 3.293L8 0Z" clip-rule="evenodd"/></svg>
             </div>
 
 
-
-            <ul class="product-list">
-              <li class="product-card item-new">
-                <div class="image-wrapper">
-                  <img class="product-card-image" src="images/products/perforator.jpg" alt="Перфоратор BOSCH BFG 3000." width="216" height="180">
-                </div>
-                <div class="link-wrapper">
-                  <a class="product-card-title link" href="#">Перфоратор BOSCH BFG 3000</a>
-                </div>
-                <span class="old-price">22500 ₽</span>
-                <a class="product-card-price" href="#">
-                  15500 ₽
-                  <svg class="card-price-flag" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="138" height="40" fill="none" viewBox="0 0 138 40"><path d="M121.089 1.238A4.002 4.002 0 0 0 118.195 0H2.957C1.331 0 0 1.421 0 3.158v33.684C0 38.58 1.33 40 2.957 40h115.238a4.002 4.002 0 0 0 2.894-1.238l15.274-16a4 4 0 0 0 0-5.524l-15.274-16Z"/></svg>
+            <ul class="catalog__list">
+              <li class="catalog__item card">
+                <a class="card__image-wrapper" href="#">
+                  <picture>
+                    <source width="130" height="188" type="image/webp" srcset="images/catalog/coffee-can-1@1x.webp, images/catalog/coffee-can-1@2x.webp 2x">
+                    <img class="card__image" src="images/catalog/coffee-can-1@1x.png" srcset="images/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Напиток Декаф Флэт Уайт.">
+                  </picture>
                 </a>
-                <div class="card-button-container">
-                  <a class="button card-button-cart" href="#">Купить</a>
-                  <a class="button button-light card-button-favorite" href="#">В закладки</a>
+                <a class="card__title" href="#">Декаф Флэт Уайт</a>
+                <p class="card__text">Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком</p>
+                <div class="card__button-container">
+                  <span class="card__price">225₽</span>
+                  <a class="card__button button button--with-icon" href="#">В корзину</a>
                 </div>
               </li>
             </ul>

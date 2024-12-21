@@ -1,0 +1,42 @@
+.select {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("../../icons/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    pointer-events: none;
+  }
+}
+
+.select__label {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-basic);
+}
+
+.select__control {
+  appearance: none;
+  padding: 4px 31px 4px 10px;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--accent-primary);
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
