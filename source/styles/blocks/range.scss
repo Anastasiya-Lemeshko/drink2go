@@ -1,0 +1,25 @@
+.range__container {
+  width: 280px;
+  height: 24px;
+  background-color: red;
+  margin-bottom: 24px;
+}
+
+.range__inputs {
+  display: grid;
+  grid-template-columns: 1fr 8px 1fr;
+  align-items: center;
+  gap: 18px;
+  max-width: 310px;
+
+  &::before {
+    grid-area: 1 / 2 / 2 / 3;
+    content: "";
+    width: 8px;
+    height: 2px;
+    background-color: var(--grey-basic);
+  }
+}
+
+
+

@@ -193,7 +193,7 @@
     <section class="catalog">
       <div class="catalog__wrapper">
         <p class="catalog__info title-info">Каталог</p>
-        <h2 class="catalog__title">Каталог кофейных напитков</h2>
+        <h2 class="catalog__title title">Каталог кофейных напитков</h2>
         <div class="catalog__container">
 
 
@@ -204,16 +204,16 @@
 
               <fieldset class="filter__group group">
                 <legend class="group__title">Цена</legend>
-                <div class="group__slider slider">
-                  <div class="slider__container"></div>
-                  <div class="slider__inputs">
-                    <div class="slider__price input-text">
-                      <label class="input-text__label" for="min-price">Минимальная цена</label>
-                      <input class="input-text__input" type="number" name="min-price" value="0" id="min-price">
+                <div class="group__slider range">
+                  <div class="range__container"></div>
+                  <div class="range__inputs">
+                    <div class="range__price input-text">
+                      <label class="input-text__label visually-hidden" for="min-price">Минимальная цена</label>
+                      <input class="input-text__input" type="number" name="min-price" placeholder="0" value="" id="min-price">
                     </div>
-                    <div class="slider__price input-text">
-                      <label class="input-text__label" for="max-price">Максимальная цена</label>
-                      <input class="input-text__input" type="number" name="max-price" value="900" id="max-price">
+                    <div class="range__price input-text">
+                      <label class="input-text__label visually-hidden" for="max-price">Максимальная цена</label>
+                      <input class="input-text__input" type="number" name="max-price" placeholder="900" value="" id="max-price">
                     </div>
                   </div>
                 </div>
@@ -225,19 +225,19 @@
                 <ul class="group__list group__list--has-milk">
                   <li class="group__item group__item--control control">
                     <input class="visually-hidden control__input" type="radio" name="milk" id="no-matter" value="no-matter" checked>
-                    <label class="control__label control__label" for="no-matter">Неважно</label>
+                    <label class="control__label" for="no-matter">Неважно</label>
                   </li>
                   <li class="group__item group__item--control control">
                     <input class="visually-hidden control__input" type="radio" name="milk" id="animal" value="animal">
-                    <label class="control__label control__label" for="animal">Только животное</label>
+                    <label class="control__label" for="animal">Только животное</label>
                   </li>
                   <li class="group__item group__item--control control">
                     <input class="visually-hidden control__input" type="radio" name="milk" id="vegetable" value="vegetable">
-                    <label class="control__label control__label" for="vegetable">Только растительное</label>
+                    <label class="control__label" for="vegetable">Только растительное</label>
                   </li>
                   <li class="group__item group__item--control control">
                     <input class="visually-hidden control__input" type="radio" name="milk" id="without" value="without" disabled>
-                    <label class="control__label control__label" for="without">Без молока</label>
+                    <label class="control__label" for="without">Без молока</label>
                   </li>
                 </ul>
               </fieldset>

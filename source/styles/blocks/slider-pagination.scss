@@ -22,7 +22,7 @@
 
   &:focus-visible,
   &:hover {
-    --button-color: rgba(120, 89, 207, 0.25);
+    --button-color: var(--accent-opacity);
   }
 
   &:active {

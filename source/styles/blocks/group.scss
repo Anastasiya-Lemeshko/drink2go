@@ -4,17 +4,29 @@
   border: none;
 }
 
-.group__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.group:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .group__title {
+  margin-bottom: 20px;
+  padding: 0;
   font-family: $primary-font;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: var(--text-basic);
 }
+
+.group__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.group__item:not(:last-child) {
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+
 
