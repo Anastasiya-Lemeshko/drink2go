@@ -1,0 +1,115 @@
+.control__label {
+  --external-width: 24px;
+  --external-height: 24px;
+  --inner-size: 16px;
+  // --top-position: 4px;
+  // --left-position: 5px;
+
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  // min-height: 30px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+
+  &::before {
+    box-sizing: border-box;
+    grid-area: 1 / 1 / 2 / 2;
+    content: "";
+    width: var(--external-width);
+    height: var(--external-height);
+    background-color: rgba(120, 89, 207, 0.25);
+    border: 2px solid var(--accent-primary);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  &::after {
+    display: none;
+    grid-area: 1 / 1 / 2 / 2;
+    content: "";
+    width: var(--inner-size);
+    height: var(--inner-size);
+    background-color: var(--white);
+    border-radius: 50%;
+    }
+}
+
+.control__label--toggle {
+  --external-width: 42px;
+  --inner-size: 20px;
+  // --top-position: 9px;
+  // --left-position: 9px;
+
+  &::before {
+    border-radius: 80px;
+  }
+
+  &::after {
+    display: block;
+    width: var(--inner-size);
+    height: var(--inner-size);
+    transform: translate(4px, 3px);
+    transition: transform 0.3s;
+  }
+}
+
+.control__input:checked ~ .control__label::after {
+  display: block;
+}
+
+.control__input:checked ~ .control__label--toggle::after {
+  transform: translate(18px, 3px);
+}
+
+.control__input:focus-visible ~ .control__label::before,
+.control__input:hover ~ .control__label::before {
+  background-color: rgba(120, 89, 207, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .control__input:checked + .control__label::after {
+//   display: block;
+// }
+
+// .control__input:focus + .control__label::before {
+//   outline: 2px solid #444444;
+// }
+
+// .control__input:hover + .control__label::before {
+//   border: 1px solid #bababa;
+// }
+
+// .control__input:active + .control__label::before {
+//   opacity: 0.5;
+// }
+
+// .control__input:disabled + .control__label::before {
+//   pointer-events: none;
+//   opacity: 0.3;
+// }

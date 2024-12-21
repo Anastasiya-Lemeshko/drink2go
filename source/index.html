@@ -188,6 +188,158 @@
         </li>
       </ul>
     </section>
+
+
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <p class="catalog__info title-info">Каталог</p>
+        <h2 class="catalog__title">Каталог кофейных напитков</h2>
+        <div class="catalog__container">
+
+
+          <section class="catalog__filter filter">
+            <h3 class="visually-hidden">Фильтр.</h3>
+            <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+
+
+              <fieldset class="filter__group group">
+                <legend class="group__title">Цена</legend>
+                <div class="group__slider slider">
+                  <div class="slider__container"></div>
+                  <div class="slider__inputs">
+                    <div class="slider__price input-text">
+                      <label class="input-text__label" for="min-price">Минимальная цена</label>
+                      <input class="input-text__input" type="number" name="min-price" value="0" id="min-price">
+                    </div>
+                    <div class="slider__price input-text">
+                      <label class="input-text__label" for="max-price">Максимальная цена</label>
+                      <input class="input-text__input" type="number" name="max-price" value="900" id="max-price">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+
+              <fieldset class="filter__group group">
+                <legend class="group__title">Наличие молока</legend>
+                <ul class="group__list group__list--has-milk">
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="radio" name="milk" id="no-matter" value="no-matter" checked>
+                    <label class="control__label control__label" for="no-matter">Неважно</label>
+                  </li>
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="radio" name="milk" id="animal" value="animal">
+                    <label class="control__label control__label" for="animal">Только животное</label>
+                  </li>
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="radio" name="milk" id="vegetable" value="vegetable">
+                    <label class="control__label control__label" for="vegetable">Только растительное</label>
+                  </li>
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="radio" name="milk" id="without" value="without" disabled>
+                    <label class="control__label control__label" for="without">Без молока</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+
+
+
+              <fieldset class="filter__group group">
+                <legend class="group__title">Страна произрастания</legend>
+                <ul class="group__list group__list--region">
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="brazil" id="brazil" checked>
+                    <label class="control__label control__label--toggle" for="brazil">Бразилия</label>
+                  </li>
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="ethiopia" id="ethiopia">
+                    <label class="control__label control__label--toggle" for="ethiopia">Эфиопия</label>
+                  </li>
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="colombia" id="colombia">
+                    <label class="control__label control__label--toggle" for="colombia">Колумбия</label>
+                  </li>
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="costa-rica" id="costa-rica">
+                    <label class="control__label control__label--toggle" for="costa-rica">Коста-Рика</label>
+                  </li>
+                  <li class="group__item group__item--control control">
+                    <input class="visually-hidden control__input" type="checkbox" name="peru" id="peru" disabled>
+                    <label class="control__label control__label--toggle" for="peru">Перу</label>
+                  </li>
+                </ul>
+
+              </fieldset>
+
+              <div class="filter__button-container">
+                <button class="filter__button button" type="submit">Применить</button>
+                <button class="filter__button button" type="reset">Сбросить</button>
+              </div>
+
+            </form>
+          </section>
+
+
+
+          <div class="card-container">
+            <div class="select-wrapper">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="">Сортировать</option>
+                <option value="popular">Популярные</option>
+                <option value="rating">В наличии</option>
+                <option value="cheap">Недорогие</option>
+              </select>
+              <svg class="select-toggle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="7" fill="none" viewBox="0 0 10 7"><path fill-rule="evenodd" d="m8 0 1.414 1.414-4.707 4.707L0 1.414 1.414 0l3.293 3.293L8 0Z" clip-rule="evenodd"/></svg>
+            </div>
+
+
+
+            <ul class="product-list">
+              <li class="product-card item-new">
+                <div class="image-wrapper">
+                  <img class="product-card-image" src="images/products/perforator.jpg" alt="Перфоратор BOSCH BFG 3000." width="216" height="180">
+                </div>
+                <div class="link-wrapper">
+                  <a class="product-card-title link" href="#">Перфоратор BOSCH BFG 3000</a>
+                </div>
+                <span class="old-price">22500 ₽</span>
+                <a class="product-card-price" href="#">
+                  15500 ₽
+                  <svg class="card-price-flag" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="138" height="40" fill="none" viewBox="0 0 138 40"><path d="M121.089 1.238A4.002 4.002 0 0 0 118.195 0H2.957C1.331 0 0 1.421 0 3.158v33.684C0 38.58 1.33 40 2.957 40h115.238a4.002 4.002 0 0 0 2.894-1.238l15.274-16a4 4 0 0 0 0-5.524l-15.274-16Z"/></svg>
+                </a>
+                <div class="card-button-container">
+                  <a class="button card-button-cart" href="#">Купить</a>
+                  <a class="button button-light card-button-favorite" href="#">В закладки</a>
+                </div>
+              </li>
+            </ul>
+
+
+            <section class="pagination">
+              <h3 class="visually-hidden">Пагинация.</h3>
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-link link" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <span class="pagination-link pagination-current">2</span>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link link" href="#">4</a>
+                </li>
+              </ul>
+              <a class="button button-dark show-more" href="#">Показать ещё</a>
+            </section>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
   </main>
   <footer>
     <span>footer</span>

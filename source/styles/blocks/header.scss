@@ -3,16 +3,7 @@
 
   background-color: var(--white);
   color: var(--text-basic);
-  padding: 0 0 0 $mobile-side;
   min-height: 60px;
-
-  @media #{$tablet-width} {
-    padding: 0 $mobile-side;
-  }
-
-  @media #{$desktop-width} {
-    padding: 0 $desktop-side;
-  }
 }
 
 .header__navigation {
@@ -22,6 +13,15 @@
   gap: 40px;
   max-width: $max-content-width;
   margin: 0 auto;
+  padding: 0 0 0 $mobile-side;
+
+  @media #{$tablet-width} {
+    padding: 0 $mobile-side;
+  }
+
+  @media #{$desktop-width} {
+    padding: 0 $desktop-side;
+  }
 }
 
 .header__logo-wrapper {

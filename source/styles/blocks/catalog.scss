@@ -1,0 +1,17 @@
+.catalog {
+  background-color: var(--grey-light);
+}
+
+.catalog__wrapper {
+  padding: 50px $mobile-side 44px;
+  max-width: $max-content-width;
+  margin: 0 auto;
+}
+
+.catalog__info {
+  text-align: center;
+}
+
+.catalog__title {
+  text-align: center;
+}
