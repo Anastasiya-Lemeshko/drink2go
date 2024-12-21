@@ -2,6 +2,11 @@
   --external-width: 24px;
   --external-height: 24px;
   --inner-size: 16px;
+  --external-border: 2px solid var(--grey-basic);
+  --external-bg: var(--white);
+  --inner-bg: var(--accent-primary);
+  --inner-display: none;
+  --label-color: var(--text-basic);
 
   box-sizing: border-box;
   display: grid;
@@ -13,6 +18,7 @@
   font-family: $primary-font;
   font-size: 16px;
   line-height: 24px;
+  color: var(--label-color);
   cursor: pointer;
 
   &::before {
@@ -21,19 +27,19 @@
     content: "";
     width: var(--external-width);
     height: var(--external-height);
-    background-color: var(--white);
-    border: 2px solid var(--grey-basic);
+    background-color: var(--external-bg);
+    border: var(--external-border);
     border-radius: 50%;
     transition: background-color 0.3s;
   }
 
   &::after {
-    display: none;
+    display: var(--inner-display);
     grid-area: 1 / 1 / 2 / 2;
     content: "";
     width: var(--inner-size);
     height: var(--inner-size);
-    background-color: var(--accent-primary);
+    background-color: var(--inner-bg);
     border-radius: 50%;
     transform: translate(4px, 4px);
     }
@@ -42,49 +48,78 @@
 .control__label--toggle {
   --external-width: 42px;
   --inner-size: 20px;
+  --external-border: 2px solid var(--grey-basic);
+  --external-bg: var(--grey-basic);
+  --inner-bg: var(--white);
+  --inner-display: block;
 
-  grid-template-columns: 24px 1fr;
+  grid-template-columns: 42px 1fr;
 
   &::before {
     border-radius: 80px;
   }
 
   &::after {
-    display: block;
     width: var(--inner-size);
     height: var(--inner-size);
-    transform: translate(4px, 3px);
+    transform: translate(2px, 2px);
     transition: transform 0.3s;
   }
 }
 
-.control__input:checked ~ .control__label::before {
-  border: 2px solid var(--accent-primary);
+.control__input:focus ~ .control__label,
+.control__input:hover ~ .control__label,
+.control__input:active ~ .control__label {
+  --external-border: 2px solid var(--accent-primary);
+  --inner-bg: var(--accent-opacity);
+  --inner-display: block;
 }
 
-.control__input:checked ~ .control__label::after {
-  display: block;
+.control__input:checked ~ .control__label {
+  --inner-display: block;
+  --external-border: 2px solid var(--accent-primary);
+  --inner-bg: var(--accent-primary);
 }
 
 .control__input:disabled ~ .control__label {
-  color: var(--grey-basic);
+  --external-border: 2px solid var(--grey-middle);
+  --external-bg: transparent;
+  --inner-bg: var(--grey-middle);
+  --label-color: var(--grey-basic);
 }
 
-.control__input:disabled ~ .control__label::before {
-  border: 2px solid var(--grey-middle);
-  background-color: transparent;
+.control__input:focus ~ .control__label--toggle,
+.control__input:hover ~ .control__label--toggle,
+.control__input:active ~ .control__label--toggle {
+  --external-border: 2px solid var(--accent-primary);
+  --external-bg: var(--accent-opacity);
+  --inner-bg: var(--white);
+  --inner-display: block;
 }
 
-
+.control__input:checked ~ .control__label--toggle {
+  --external-border: 2px solid var(--accent-primary);
+  --external-bg: var(--accent-primary);
+  --inner-bg: var(--white);
+}
 
 .control__input:checked ~ .control__label--toggle::after {
-  transform: translate(18px, 3px);
+  transform: translate(20px, 2px);
 }
 
-// .control__input:focus-visible ~ .control__label::before,
-// .control__input:hover ~ .control__label::before {
-//   background-color: rgba(120, 89, 207, 0.25);
-// }
+.control__input:disabled ~ .control__label--toggle {
+  --external-border: 2px solid var(--grey-middle);
+  --external-bg: var(--grey-middle);
+  --inner-bg: var(--grey-light);
+  --label-color: var(--grey-basic);
+}
+
+.control__input:checked:disabled ~ .control__label--toggle {
+  --inner-bg: 2px solid var(--grey-basic);
+}
+
+
+
 
 
 
