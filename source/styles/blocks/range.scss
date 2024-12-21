@@ -3,6 +3,11 @@
   height: 24px;
   background-color: red;
   margin-bottom: 24px;
+
+  @media #{$tablet-width} {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .range__inputs {
@@ -11,6 +16,10 @@
   align-items: center;
   gap: 18px;
   max-width: 310px;
+
+  @media #{$tablet-width} {
+    gap: 20px;
+  }
 
   &::before {
     grid-area: 1 / 2 / 2 / 3;

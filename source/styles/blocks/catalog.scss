@@ -6,6 +6,14 @@
   padding: 50px $mobile-side 44px;
   max-width: $max-content-width;
   margin: 0 auto;
+
+  @media #{$tablet-width} {
+    padding: 80px $mobile-side 90px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 100px $desktop-side 120px;
+  }
 }
 
 .catalog__info {
