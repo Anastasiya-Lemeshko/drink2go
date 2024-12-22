@@ -3,28 +3,57 @@
 }
 
 .footer__wrapper {
-  padding: 22px $mobile-side 30px;
+  padding: 20px 0 30px;
 
   @media #{$tablet-width} {
-    padding: 42px $mobile-side 40px;
+    padding: 40px $mobile-side;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 
   @media #{$desktop-width} {
+    grid-template-columns: repeat(4, 1fr);
     padding: 40px $desktop-side 40px;
     max-width: $max-content-width;
     margin: 0 auto;
+    gap: 20px 30px;
   }
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
-  border-bottom: var(--border-bottom);
-  padding: 0 0 20px;
+  align-items: center;
+  padding: 0 $mobile-side 20px;
+
+  @media #{$mobile-only} {
+    border-bottom: var(--border-bottom);
+  }
+
+  @media #{$tablet-width} {
+    grid-column: 1 / -1;
+    padding: 0;
+  }
+
+  @media #{$desktop-width} {
+    grid-column: 1 / 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.footer__logo {
+  display: block;
+
+  @media #{$desktop-width} {
+    margin-bottom: 10px;
+  }
 }
 
 .footer__logo-text {
   display: none;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -32,12 +61,25 @@
 
   @media #{$desktop-width} {
     display: block;
+    margin-bottom: 50px;
   }
 }
 
 .footer__section {
-  padding: 20px 0;
-  border-bottom: var(--border-bottom);
+  padding: 20px $mobile-side;
+  line-height: 16px;
+
+  @media #{$mobile-only} {
+    border-bottom: var(--border-bottom);
+  }
+
+  @media #{$tablet-width} {
+    padding: 0;
+  }
+
+  @media #{$desktop-width} {
+    padding: 9px 0 0;
+  }
 }
 
 .footer__subtitle {
@@ -57,13 +99,13 @@
 }
 
 .footer__item:not(:last-child) {
+  padding: 0;
   margin: 0 0 4px;
 }
 
 .footer__link {
   display: inline-block;
   padding: 8px 0;
-  margin-bottom: 4px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -82,7 +124,12 @@
   }
 }
 
+.footer__address {
+  margin-top: 20px;
+}
+
 .footer__contact {
+  margin: 0;
   padding-left: 19px;
   font-family: $primary-font;
   font-weight: 400;
@@ -91,13 +138,14 @@
   line-height: 20px;
   color: var(--text-basic);
   text-decoration: none;
-  background-position: left 0 top 6px;
+  background-position: left 0 top 2px;
   background-repeat: no-repeat;
   background-size: 13px 16px;
 }
 
 .footer__contact--address {
   background-image: url("../../icons/address.svg");
+  margin-bottom: 16px;
 }
 
 .footer__contact--phone {
@@ -113,4 +161,11 @@
   }
 }
 
+.footer__htmlacademy {
+  padding: 20px $mobile-side 0;
 
+  @media #{$tablet-width} {
+    grid-column: 1 / -1;
+    padding: 0;
+  }
+}
