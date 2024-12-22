@@ -63,8 +63,12 @@
   }
 }
 
-.header__user-nav--opened {
-  --mobile-menu-icon: url("../../icons/stack.svg#cross-mobile");
+.header__user-nav--closed .user-nav__toggle {
+  background-image: url("../../icons/stack.svg#burger");
+}
+
+.header__user-nav--opened .user-nav__toggle {
+  background-image: url("../../icons/stack.svg#cross-mobile");
 }
 
 .header__user-nav--closed + .header__catalog-nav {
