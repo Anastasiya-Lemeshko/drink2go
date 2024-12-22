@@ -52,6 +52,7 @@
   }
 }
 
-.select:has(.select__control:active)::after {
+.select:has(.select__control:active)::after,
+.select:has(.select__control:focus-within)::after {
   transform: translateY(-3px) rotate(180deg);
 }

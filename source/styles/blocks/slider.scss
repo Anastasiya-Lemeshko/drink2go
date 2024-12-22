@@ -2,6 +2,7 @@
   --liner-height: 188px;
 
   position: relative;
+  overflow: hidden;
 
   @media #{$desktop-width} {
     margin: 0 auto;
@@ -23,6 +24,7 @@
   height: 100%;
   background-color: transparent;
   border: none;
+  z-index: 2;
   cursor: pointer;
 
   @media #{$tablet-width} {
@@ -62,19 +64,22 @@
 }
 
 .slider__list {
+  display: flex;
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
-
-  @media #{$desktop-width} {
-    display: flex;
-  }
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .slider__item {
-  display: none;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
   align-items: center;
   text-align: center;
   padding: 20px 20px 60px;
@@ -84,8 +89,8 @@
   }
 
   @media #{$desktop-width} {
-    width: 100%;
     flex-direction: row;
+    max-width: 1440px;
     gap: 30px;
     padding: 30px 80px 60px 90px;
     text-align: left;
@@ -102,10 +107,6 @@
     left: 0;
     background-color: $white;
   }
-}
-
-.slider__item--current {
-  display: flex;
 }
 
 .slider__image-container {
@@ -168,6 +169,7 @@
 
 .slider__description {
   margin: 0 auto 20px;
+  max-width: 500px;
 
   @media #{$tablet-width} {
     max-width: 610px;
