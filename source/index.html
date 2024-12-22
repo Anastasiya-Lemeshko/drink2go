@@ -72,11 +72,15 @@
         <div class="hero__slider slider">
           <button class="slider__button slider__button--prev slider-button-prev" type="button">
             <span class="visually-hidden">Предыдущий товар.</span>
-            <svg class="slider__icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.72 0 15 1.32 6.57 10 15 18.68 13.72 20 4 10l9.72-10Z" clip-rule="evenodd"/></svg>
+            <svg class="slider__icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M13.72 0 15 1.32 6.57 10 15 18.68 13.72 20 4 10l9.72-10Z" clip-rule="evenodd" />
+            </svg>
           </button>
           <button class="slider__button slider__button--next slider-button-next" type="button">
             <span class="visually-hidden">Следующий товар.</span>
-            <svg class="slider__icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.72 0 15 1.32 6.57 10 15 18.68 13.72 20 4 10l9.72-10Z" clip-rule="evenodd"/></svg>
+            <svg class="slider__icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M13.72 0 15 1.32 6.57 10 15 18.68 13.72 20 4 10l9.72-10Z" clip-rule="evenodd" />
+            </svg>
           </button>
           <ol class="slider__list">
             <li class="slider__item slider__item--current">
@@ -188,20 +192,14 @@
         </li>
       </ul>
     </section>
-
-
     <section class="catalog">
       <div class="catalog__wrapper">
         <p class="catalog__info title-info">Каталог</p>
         <h2 class="catalog__title title">Каталог кофейных напитков</h2>
         <div class="catalog__container">
-
-
           <section class="catalog__filter filter">
             <h3 class="visually-hidden">Фильтр.</h3>
             <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
-
-
               <fieldset class="filter__group group">
                 <legend class="group__title">Цена</legend>
                 <div class="group__slider range">
@@ -218,8 +216,6 @@
                   </div>
                 </div>
               </fieldset>
-
-
               <fieldset class="filter__group group">
                 <legend class="group__title">Наличие молока</legend>
                 <ul class="group__list group__list--has-milk">
@@ -241,10 +237,6 @@
                   </li>
                 </ul>
               </fieldset>
-
-
-
-
               <fieldset class="filter__group group">
                 <legend class="group__title">Страна произрастания</legend>
                 <ul class="group__list group__list--region">
@@ -269,19 +261,13 @@
                     <label class="control__label control__label--toggle" for="peru">Перу</label>
                   </li>
                 </ul>
-
               </fieldset>
-
               <div class="filter__button-container">
                 <button class="filter__button button" type="submit">Применить</button>
                 <button class="filter__button button button--secondary" type="reset">Сбросить</button>
               </div>
-
             </form>
           </section>
-
-
-
           <div class="catalog__cards">
             <div class="catalog__select select">
               <label class="select__label" for="filter-select">Сортировка:</label>
@@ -291,8 +277,6 @@
                 <option value="popular">по популярности</option>
               </select>
             </div>
-
-
             <ul class="catalog__list">
               <li class="catalog__item card">
                 <a class="card__image-wrapper" href="#">
@@ -391,14 +375,14 @@
                 </div>
               </li>
             </ul>
-
-
             <section class="catalog__pagination pagination">
               <h3 class="visually-hidden">Пагинация.</h3>
               <!-- Добавить класс pagination__button--hidden для скрытия кнопки -->
               <a class="pagination__button pagination__button--prev button" href="#">
                 <span class="pagination__button-text">Назад</span>
-                <svg class="pagination__icon" aria-hidden="true" focusable="false" width="10" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill-rule="evenodd" d="M0 4.2 1.24 3 5 6.62 8.76 3 10 4.2 5 9 0 4.2Z" clip-rule="evenodd"/></svg>
+                <svg class="pagination__icon" aria-hidden="true" focusable="false" width="10" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                  <path fill-rule="evenodd" d="M0 4.2 1.24 3 5 6.62 8.76 3 10 4.2 5 9 0 4.2Z" clip-rule="evenodd" />
+                </svg>
               </a>
               <ul class="pagination__list">
                 <li class="pagination__item">
@@ -413,18 +397,105 @@
               </ul>
               <a class="pagination__button pagination__button--next button" href="#">
                 <span class="pagination__button-text">Вперёд</span>
-                <svg class="pagination__icon" aria-hidden="true" focusable="false" width="10" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill-rule="evenodd" d="M0 4.2 1.24 3 5 6.62 8.76 3 10 4.2 5 9 0 4.2Z" clip-rule="evenodd"/></svg>
+                <svg class="pagination__icon" aria-hidden="true" focusable="false" width="10" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                  <path fill-rule="evenodd" d="M0 4.2 1.24 3 5 6.62 8.76 3 10 4.2 5 9 0 4.2Z" clip-rule="evenodd" />
+                </svg>
               </a>
             </section>
           </div>
         </div>
-
-
+      </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта офиса по адресу Санкт-Петербург, набережная реки Карповки, дом 5.</h2>
+      <div class="map__image-wrapper">
+        <picture>
+          <source width="1440" height="540" type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
+          <source width="768" height="480" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+          <source width="320" height="420" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
+          <source width="1440" height="540" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+          <source width="768" height="480" type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+          <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="420" alt="Карта офиса по адресу Санкт-Петербург, набережная реки Карповки, дом 5.">
+        </picture>
       </div>
     </section>
   </main>
-  <footer>
-    <span>footer</span>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <a class="footer__logo logo-image" href="#">
+          <picture>
+            <source width="170" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-desktop.svg">
+            <img class="logo-image__image" src="images/logo/logo-tablet.svg" width="82" height="36" alt="Логотип магазина Drink2Go.">
+          </picture>
+        </a>
+        <section class="footer__social social">
+          <h2 class="visually-hidden">Контакты в социальных сетях.</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="#">
+                <span class="visually-hidden">Пинтерест.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#">
+                <span class="visually-hidden">Одноклассники.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="footer__navigation">
+        <h2 class="footer__subtitle">Интернет-магазин</h2>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Каталог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Доставка</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">О нас</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__media">
+        <h2 class="footer__subtitle">Медиа</h2>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Блог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Информация для СМИ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Правовая информация</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__contacts">
+        <h2 class="footer__subtitle">Контакты</h2>
+        <address class="footer__address-container">
+          <p class="footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</p>
+          <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </address>
+      </section>
+      <section class="footer__htmlacademy htmlacademy">
+        <h2 class="visually-hidden">Ссылка на сайт htmlacademy.</h2>
+        <a class="htmlacademy__link" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
+          <span class="htmlacademy__text">Разработано в HTML Academy</span>
+          <svg class="htmlacademy__logo" role="img" width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" ><path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="#BDBDBD" /></svg>
+        </a>
+      </section>
+    </div>
   </footer>
 </body>
 </html>

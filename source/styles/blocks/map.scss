@@ -1,0 +1,26 @@
+.map {
+  min-height: 420px;
+
+  @media #{$tablet-width} {
+    min-height: 480px;
+  }
+
+  @media #{$desktop-width} {
+    min-height: 540px;
+  }
+}
+
+.map__image-wrapper {
+  @media #{$desktop-width} {
+    margin: auto;
+    height: 100%;
+    max-width: $max-content-width;
+  }
+}
+
+.map__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
