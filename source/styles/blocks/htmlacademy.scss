@@ -1,4 +1,7 @@
 .htmlacademy__link {
+  --icon-fill: var(--grey-basic);
+  --text-color: var(--grey-basic);
+
   display: flex;
   gap: 4px;
   align-items: center;
@@ -6,10 +9,21 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: var(--grey-basic);
+  color: var(--text-color);
   text-decoration: none;
+
+  &:focus-visible,
+  &:hover {
+    --icon-fill: var(--accent-primary);
+    --text-color: var(--accent-primary);
+  }
+
+  &:active {
+    --icon-fill: var(--accent-dark);
+    --bg-color: var(--accent-dark);
+  }
 }
 
 .htmlacademy__logo {
-  fill: var(--grey-basic);
+  fill: var(--icon-fill);
 }
