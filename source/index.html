@@ -9,7 +9,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <nav class="header__navigation">
       <div class="header__logo-wrapper">
         <a class="header__logo logo-image" href="#">
@@ -66,7 +66,7 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков «Drink2Go»</h1>
-    <section class="hero hero--flat-white">
+    <section class="hero hero--flat-white" data-test="hero">
       <div class="hero__wrapper">
         <h2 class="visually-hidden">Новинки</h2>
         <div class="hero__slider slider">
@@ -170,7 +170,7 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section class="features" data-test="features">
       <p class="features__info title-info">Преимущества</p>
       <h2 class="features__title title">Главные причины выбрать Drink2Go</h2>
       <ul class="features__list">
@@ -192,7 +192,7 @@
         </li>
       </ul>
     </section>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__wrapper">
         <p class="catalog__info title-info">Каталог</p>
         <h2 class="catalog__title title">Каталог кофейных напитков</h2>
@@ -207,11 +207,11 @@
                   <div class="range__inputs">
                     <div class="range__price input-text">
                       <label class="input-text__label visually-hidden" for="min-price">Минимальная цена</label>
-                      <input class="input-text__input" type="number" name="min-price" placeholder="0" value="" id="min-price">
+                      <input class="input-text__input" type="number" name="min-price" placeholder="0" id="min-price">
                     </div>
                     <div class="range__price input-text">
                       <label class="input-text__label visually-hidden" for="max-price">Максимальная цена</label>
-                      <input class="input-text__input" type="number" name="max-price" placeholder="900" value="" id="max-price">
+                      <input class="input-text__input" type="number" name="max-price" placeholder="900" id="max-price">
                     </div>
                   </div>
                 </div>
@@ -271,7 +271,7 @@
           <div class="catalog__cards">
             <div class="catalog__select select">
               <label class="select__label" for="filter-select">Сортировка:</label>
-              <select class="select__control" id="filter-select">
+              <select class="select__control" id="filter-select" name="filter-select">
                 <option value="by-default">по умолчанию</option>
                 <option value="price">по цене</option>
                 <option value="popular">по популярности</option>
@@ -406,7 +406,7 @@
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map" data-test="map">
       <h2 class="visually-hidden">Карта офиса по адресу Санкт-Петербург, набережная реки Карповки, дом 5.</h2>
       <div class="map__image-wrapper">
         <picture>
@@ -420,7 +420,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper">
       <div class="footer__container">
         <a class="footer__logo logo-image" href="#">

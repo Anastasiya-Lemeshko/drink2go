@@ -111,7 +111,7 @@
   font-size: 18px;
   line-height: 32px;
   text-align: center;
-  color: var(--text-basic);
+  color: $text-basic;
 
   @media #{$tablet-only} {
     text-align: left;

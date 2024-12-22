@@ -1,5 +1,5 @@
 .footer {
-  --border-bottom: 1px solid var(--accent-light);
+  --border-bottom: 1px solid #{$accent-light};
 }
 
 .footer__wrapper {
@@ -14,7 +14,7 @@
 
   @media #{$desktop-width} {
     grid-template-columns: repeat(4, 1fr);
-    padding: 40px $desktop-side 40px;
+    padding: 40px $desktop-side;
     max-width: $max-content-width;
     margin: 0 auto;
     gap: 20px 30px;
@@ -43,6 +43,7 @@
     align-items: flex-start;
   }
 }
+
 .footer__logo {
   display: block;
 
@@ -57,7 +58,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: var(--text-basic);
+  color: $text-basic;
 
   @media #{$desktop-width} {
     display: block;
@@ -89,7 +90,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.02em;
-  color: var(--accent-primary);
+  color: $accent-primary;
 }
 
 .footer__list {
@@ -112,15 +113,15 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--text-basic);
+  color: $text-basic;
 
   &:focus-visible,
   &:hover {
-    color: var(--accent-middle);
+    color: $accent-middle;
   }
 
   &:active {
-    color: var(--accent-dark);
+    color: $accent-dark;
   }
 }
 
@@ -136,7 +137,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
-  color: var(--text-basic);
+  color: $text-basic;
   text-decoration: none;
   background-position: left 0 top 2px;
   background-repeat: no-repeat;
@@ -153,11 +154,11 @@
 
   &:focus-visible,
   &:hover {
-    color: var(--accent-middle);
+    color: $accent-middle;
   }
 
   &:active {
-    color: var(--accent-dark);
+    color: $accent-dark;
   }
 }
 

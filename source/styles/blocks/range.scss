@@ -1,7 +1,7 @@
 .range__container {
   width: 280px;
   height: 24px;
-  background-color: red;
+  background-color: $accent-primary;
   margin-bottom: 24px;
 
   @media #{$tablet-width} {
@@ -30,9 +30,6 @@
     content: "";
     width: 8px;
     height: 2px;
-    background-color: var(--grey-basic);
+    background-color: $grey-basic;
   }
 }
-
-
-

@@ -8,7 +8,7 @@
 }
 
 .slider-pagination__button {
-  --button-color: var(--white);
+  --button-color: #{$white};
 
   display: block;
   box-sizing: border-box;
@@ -22,20 +22,20 @@
 
   &:focus-visible,
   &:hover {
-    --button-color: var(--accent-opacity);
+    --button-color: #{$accent-opacity};
   }
 
   &:active {
-    --button-color: var(--accent-primary);
+    --button-color: #{$accent-primary};
   }
 
   &:disabled {
-    --button-color: var(--grey-basic);
+    --button-color: #{$grey-basic};
 
     opacity: 0.5;
   }
 }
 
 .slider-pagination__button--current {
-  --button-color: var(--accent-primary);
+  --button-color: $accent-primary;
 }

@@ -10,20 +10,20 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: var(--text-basic);
-  background-color: var(--white);
-  border: 2px solid var(--accent-primary);
+  color: $text-basic;
+  background-color: $white;
+  border: 2px solid #{$accent-primary};
   border-radius: 4px;
   outline: none;
   cursor: pointer;
 
   &::placeholder {
-    color: var(--grey-basic);
+    color: $grey-basic;
   }
 
   &:focus-visible,
   &:hover {
-    border: 2px solid var(--accent-dark);
+    border: 2px solid #{$accent-dark};
   }
 
   &:invalid:not(:placeholder-shown) {
@@ -32,8 +32,8 @@
 
   &:disabled {
     pointer-events: none;
-    color: var(--grey-basic);
-    background-color: var(--grey-light);
-    border: 2px solid var(--grey-middle);
+    color: $grey-basic;
+    background-color: $grey-light;
+    border: 2px solid #{$grey-middle};
   }
 }

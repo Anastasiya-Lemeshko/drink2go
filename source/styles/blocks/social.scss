@@ -9,7 +9,7 @@
 }
 
 .social__link {
-  --icon-fill: var(--grey-basic);
+  --icon-fill: #{$grey-basic};
   --bg-color: transparent;
 
   position: relative;
@@ -23,13 +23,13 @@
 
   &:focus-visible,
   &:hover {
-    --icon-fill: var(--accent-primary);
-    --bg-color: var(--accent-light);
+    --icon-fill: #{$accent-primary};
+    --bg-color: #{$accent-light};
   }
 
   &:active {
-    --icon-fill: var(--accent-primary);
-    --bg-color: var(--accent-opacity);
+    --icon-fill: #{$accent-primary};
+    --bg-color: #{$accent-opacity};
   }
 }
 
@@ -37,11 +37,7 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   margin: auto;
   fill: var(--icon-fill);
 }
-

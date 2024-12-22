@@ -1,8 +1,6 @@
 .header {
-  --mobile-menu-icon: url("../../icons/stack.svg#burger");
-
-  background-color: var(--white);
-  color: var(--text-basic);
+  background-color: $white;
+  color: $text-basic;
   min-height: 60px;
 }
 

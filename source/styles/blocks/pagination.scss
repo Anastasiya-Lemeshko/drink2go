@@ -28,23 +28,23 @@
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  color: var(--accent-primary);
+  color: $accent-primary;
   text-decoration: none;
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 4px;
 }
 
 .pagination__link--current {
   font-weight: 600;
-  color: var(--text-basic);
+  color: $text-basic;
 }
 
 .pagination__button {
   display: block;
   text-decoration: none;
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 4px;
-  color: var(--accent-primary);
+  color: $accent-primary;
 
   @media #{$mobile-only} {
     display: flex;
@@ -64,7 +64,7 @@
 
 .pagination__icon {
   flex-shrink: 0;
-  fill: var(--accent-primary);
+  fill: $accent-primary;
 
   @media #{$tablet-width} {
     display: none;
@@ -74,7 +74,7 @@
 .pagination__button:focus-visible .pagination__icon,
 .pagination__button:hover .pagination__icon,
 .pagination__button:active .pagination__icon {
-  fill: var(--white);
+  fill: $white;
 }
 
 .pagination__button-text {

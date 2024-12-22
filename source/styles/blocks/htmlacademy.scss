@@ -1,6 +1,6 @@
 .htmlacademy__link {
-  --icon-fill: var(--grey-basic);
-  --text-color: var(--grey-basic);
+  --icon-fill: #{$grey-basic};
+  --text-color: #{$grey-basic};
 
   display: flex;
   gap: 4px;
@@ -15,13 +15,13 @@
 
   &:focus-visible,
   &:hover {
-    --icon-fill: var(--accent-primary);
-    --text-color: var(--accent-primary);
+    --icon-fill: #{$accent-primary};
+    --text-color: #{$accent-primary};
   }
 
   &:active {
-    --icon-fill: var(--accent-dark);
-    --bg-color: var(--accent-dark);
+    --icon-fill: #{$accent-dark};
+    --bg-color: #{$accent-dark};
   }
 }
 
