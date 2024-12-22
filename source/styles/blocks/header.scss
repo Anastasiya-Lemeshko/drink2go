@@ -1,5 +1,5 @@
 .header {
-  --mobile-menu-icon: url("../../icons/burger.svg");
+  --mobile-menu-icon: url("../../icons/stack.svg#burger");
 
   background-color: var(--white);
   color: var(--text-basic);
@@ -66,7 +66,7 @@
 }
 
 .header__user-nav--opened {
-  --mobile-menu-icon: url("../../icons/cross-mobile.svg");
+  --mobile-menu-icon: url("../../icons/stack.svg#cross-mobile");
 }
 
 .header__user-nav--closed + .header__catalog-nav {
