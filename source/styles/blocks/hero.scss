@@ -1,11 +1,15 @@
-.hero--flat-white {
+.hero {
+  transition: background-color 0.5s;
+}
+
+.hero--1 {
   background-color: $slider-flat-white;
 }
 
-.hero--lavender {
+.hero--2 {
   background-color: $slider-lavender;
 }
 
-.hero--espresso {
+.hero--3 {
   background-color: $slider-espresso;
 }

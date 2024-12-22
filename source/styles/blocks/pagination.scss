@@ -91,11 +91,5 @@
 }
 
 .pagination__button--hidden {
-  color: transparent;
-  background-color: transparent;
-  pointer-events: none;
-}
-
-.pagination__button--hidden .pagination__icon {
-  fill: transparent;
+  visibility: hidden;
 }

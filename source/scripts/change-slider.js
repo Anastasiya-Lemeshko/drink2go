@@ -4,6 +4,7 @@ const sliderList = document.querySelector('.slider__list');
 const slides = document.querySelectorAll('.slider__item');
 const sliderPrev = document.querySelector('.slider-button-prev');
 const sliderNext = document.querySelector('.slider-button-next');
+const heroBg = document.querySelector('.hero');
 
 if (sliderList) {
   const setTabindex = () => {
@@ -33,13 +34,17 @@ if (sliderList) {
     } else {
       sliderList.style.transform = `translateX(${-1 * totalWidth * index}px)`;
     }
-
   };
 
   const setActiveScreen = (index) => {
     document.querySelector('.slider__item--current').classList.remove('slider__item--current');
     Array.from(slides)[index].classList.add('slider__item--current');
     setTabindex();
+  };
+
+  const isSliderButtonDisabled = (index) => {
+    sliderPrev.disabled = index === 0;
+    sliderNext.disabled = index === slides.length - 1;
   };
 
   bullitList.addEventListener('click', (evt) => {
@@ -59,6 +64,10 @@ if (sliderList) {
     setActiveScreen(newCurrentIndex);
     shiftSlider(newCurrentIndex);
     setActiveBullet(newCurrentIndex);
+    isSliderButtonDisabled(newCurrentIndex);
+
+    heroBg.classList = [`hero`];
+    heroBg.classList.add(`hero--${newCurrentIndex + 1}`)
   });
 
   sliderNext.addEventListener('click', () => {
@@ -68,12 +77,10 @@ if (sliderList) {
     setActiveScreen(newCurrentIndex);
     shiftSlider(newCurrentIndex);
     setActiveBullet(newCurrentIndex);
+    isSliderButtonDisabled(newCurrentIndex);
+
+    heroBg.classList = [`hero`];
+    heroBg.classList.add(`hero--${newCurrentIndex + 1}`);
   });
 }
-
-
-let totalWidth = window.screen.width;
-console.log(totalWidth);
-
-
 
