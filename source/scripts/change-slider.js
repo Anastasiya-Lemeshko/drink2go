@@ -6,7 +6,7 @@ const sliderPrev = document.querySelector('.slider-button-prev');
 const sliderNext = document.querySelector('.slider-button-next');
 const heroBg = document.querySelector('.hero');
 
-if (sliderList) {
+const changeSlider = () => {
   const setTabindex = () => {
     slides.forEach((item) => {
       item.querySelectorAll('a').forEach((link) => {
@@ -82,5 +82,6 @@ if (sliderList) {
     heroBg.classList = [`hero`];
     heroBg.classList.add(`hero--${newCurrentIndex + 1}`);
   });
-}
+};
 
+export { changeSlider };

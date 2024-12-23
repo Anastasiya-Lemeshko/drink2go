@@ -1,4 +1,5 @@
 const sliderElement = document.querySelector('.range__container');
+const valueElement = document.querySelectorAll('.input-text__input');
 const valueMinElement = document.querySelector('.input-text__input--min');
 const valueMaxElement = document.querySelector('.input-text__input--max');
 
@@ -8,7 +9,7 @@ const onSliderUpdate = () => {
   valueMaxElement.value = valueArray[1];
 };
 
-const createSlider = (min, max, step, start, end) => {    // единоразово создает слайдер
+const createRange = (min, max, step, start, end) => {
   noUiSlider.create(sliderElement, {
     range: { min, max },
     start: [start, end],
@@ -23,4 +24,10 @@ const createSlider = (min, max, step, start, end) => {    // единоразо�
   sliderElement.noUiSlider.on('update', onSliderUpdate);
 };
 
-createSlider(0, 970, 1, 0, 900);
+valueElement.forEach((element) => {
+  element.addEventListener('change', () => {
+    sliderElement.noUiSlider.set([valueMinElement.value, valueMaxElement.value]);
+  });
+});
+
+export { createRange };
