@@ -1,7 +1,5 @@
 .range__container {
   width: 280px;
-  height: 24px;
-  background-color: $accent-primary;
   margin-bottom: 24px;
 
   @media #{$tablet-width} {
@@ -32,4 +30,19 @@
     height: 2px;
     background-color: $grey-basic;
   }
+}
+
+
+
+.noUi-target {
+  background: linear-gradient(to bottom, transparent 1px, $grey-middle 1px, $grey-middle 3px, transparent 3px);
+  height: 4px;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-connect {
+  height: 4px;
+  background: $accent-primary;
 }

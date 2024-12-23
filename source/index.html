@@ -5,6 +5,7 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -207,11 +208,11 @@
                   <div class="range__inputs">
                     <div class="range__price input-text">
                       <label class="input-text__label visually-hidden" for="min-price">Минимальная цена</label>
-                      <input class="input-text__input" type="number" name="min-price" placeholder="0" id="min-price">
+                      <input class="input-text__input input-text__input--min" type="number" name="min-price" placeholder="0" id="min-price">
                     </div>
                     <div class="range__price input-text">
                       <label class="input-text__label visually-hidden" for="max-price">Максимальная цена</label>
-                      <input class="input-text__input" type="number" name="max-price" placeholder="900" id="max-price">
+                      <input class="input-text__input input-text__input--max" type="number" name="max-price" placeholder="900" value="900" id="max-price">
                     </div>
                   </div>
                 </div>
@@ -502,5 +503,6 @@
     </div>
   </footer>
   <script src="./scripts/main.js" type="module"></script>
+  <script src="vendor/nouislider/nouislider.js"></script>
 </body>
 </html>
