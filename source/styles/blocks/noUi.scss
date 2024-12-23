@@ -1,0 +1,43 @@
+.noUi-target {
+  background: linear-gradient(to bottom, transparent 1px, $grey-middle 1px, $grey-middle 3px, transparent 3px);
+  height: 4px;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-connects {
+  border-radius: 0;
+}
+
+.noUi-connect {
+  height: 4px;
+  background: $accent-primary;
+}
+
+.noUi-handle {
+  border: 2px solid $accent-primary;
+  border-radius: 50%;
+  background: $white;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  right: -23px;
+  top: -10px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}
+
+.noUi-active {
+  box-shadow: none;
+}

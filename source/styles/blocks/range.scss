@@ -1,14 +1,14 @@
 .range__container {
   width: 280px;
-  margin-bottom: 24px;
+  margin: 10px 0 34px;
 
   @media #{$tablet-width} {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 10px 0 30px;
   }
 
   @media #{$desktop-width} {
-    margin-bottom: 22px;
+    margin: 10px 0 32px;
   }
 }
 
@@ -30,19 +30,4 @@
     height: 2px;
     background-color: $grey-basic;
   }
-}
-
-
-
-.noUi-target {
-  background: linear-gradient(to bottom, transparent 1px, $grey-middle 1px, $grey-middle 3px, transparent 3px);
-  height: 4px;
-  border-radius: 0;
-  border: none;
-  box-shadow: none;
-}
-
-.noUi-connect {
-  height: 4px;
-  background: $accent-primary;
 }

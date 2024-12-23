@@ -8,10 +8,10 @@ const onSliderUpdate = () => {
   valueMaxElement.value = valueArray[1];
 };
 
-const createSlider = (min, max, step) => {    // единоразово создает слайдер
+const createSlider = (min, max, step, start, end) => {    // единоразово создает слайдер
   noUiSlider.create(sliderElement, {
     range: { min, max },
-    start: [min, max],
+    start: [start, end],
     step,
     connect: [false, true, false],
     format: {
@@ -23,4 +23,4 @@ const createSlider = (min, max, step) => {    // единоразово созд
   sliderElement.noUiSlider.on('update', onSliderUpdate);
 };
 
-createSlider(0, 900, 1);
+createSlider(0, 970, 1, 0, 900);
