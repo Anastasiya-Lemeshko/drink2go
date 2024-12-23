@@ -20,6 +20,27 @@
   border-radius: 50%;
   background: $white;
   box-shadow: none;
+  cursor: pointer;
+  transition: none;
+
+  &:focus-visible,
+  &:hover {
+    background: radial-gradient(circle, #ddd5f3 8px, $white 8px);
+  }
+
+  &:active {
+    background: radial-gradient(circle, $accent-primary 8px, $white 8px);
+  }
+}
+
+[disabled] .noUi-connect {
+  background: $grey-basic;
+}
+
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+  border: 2px solid $grey-basic;
+  background-color: $white;
 }
 
 .noUi-horizontal .noUi-handle {

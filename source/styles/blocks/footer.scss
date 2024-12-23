@@ -129,6 +129,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $text-basic;
+  transition: color 0.3s;
 
   &:focus-visible,
   &:hover {
@@ -157,7 +158,7 @@
   line-height: 20px;
   color: $text-basic;
   text-decoration: none;
-  background-position: left 0 top 4px;
+  background-position: left 0 top 6px;
   background-repeat: no-repeat;
   background-size: 13px 16px;
 }

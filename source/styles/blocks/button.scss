@@ -11,6 +11,7 @@
   border: none;
   background-color: $accent-primary;
   border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
 
   &:focus-visible,

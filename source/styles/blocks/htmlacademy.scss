@@ -12,6 +12,7 @@
   line-height: 16px;
   color: var(--text-color);
   text-decoration: none;
+  transition: color 0.3s;
 
   &:focus-visible,
   &:hover {
@@ -29,4 +30,5 @@
   fill: var(--icon-fill);
   width: 12px;
   height: 16px;
+  transition: fill 0.3s;
 }

@@ -28,6 +28,7 @@
   padding: 5px;
   border-radius: 4px;
   background-color: var(--bg-color);
+  transition: background-color 0.3s;
 
   &:focus-visible,
   &:hover {
@@ -48,4 +49,5 @@
   inset: 0;
   margin: auto;
   fill: var(--icon-fill);
+  transition: fill 0.3s;
 }
