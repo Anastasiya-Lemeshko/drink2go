@@ -6,6 +6,19 @@ const slides = hero.querySelectorAll('.slider__item');
 const sliderPrev = hero.querySelector('.slider-button-prev');
 const sliderNext = hero.querySelector('.slider-button-next');
 
+const isSliderButtonDisabled = (index) => {
+  sliderPrev.disabled = index === 0;
+  sliderNext.disabled = index === slides.length - 1;
+};
+
+const isSiseSlide = () => {
+  const currentSlider = document.querySelector('.slider__item--current');
+  const currentIndex = Array.from(slides).indexOf(currentSlider);
+  isSliderButtonDisabled(currentIndex);
+};
+
+isSiseSlide();
+
 const changeSlider = () => {
   const setTabindex = () => {
     slides.forEach((item) => {
@@ -40,11 +53,6 @@ const changeSlider = () => {
     document.querySelector('.slider__item--current').classList.remove('slider__item--current');
     Array.from(slides)[index].classList.add('slider__item--current');
     setTabindex();
-  };
-
-  const isSliderButtonDisabled = (index) => {
-    sliderPrev.disabled = index === 0;
-    sliderNext.disabled = index === slides.length - 1;
   };
 
   bullitList.addEventListener('click', (evt) => {

@@ -7,7 +7,7 @@
 .header__navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   max-width: $max-content-width;
   margin: 0 auto;
@@ -15,18 +15,26 @@
 
   @media #{$tablet-width} {
     padding: 0 $mobile-side;
+    gap: 20px;
   }
 
   @media #{$desktop-width} {
     padding: 0 $desktop-side;
+    gap: 40px;
   }
 }
 
 .header__logo-wrapper {
+  padding: 12px 0;
+
+  @media #{$tablet-width} {
+    padding: 22px 7px 22px 0;
+  }
+
   @media #{$desktop-width} {
     display: flex;
-    align-items: center;
     gap: 20px;
+    padding: 22px 0;
   }
 }
 
@@ -39,7 +47,6 @@
 
   @media #{$tablet-only} {
     width: 82px;
-    padding-right: 7px;
   }
 
   @media #{$desktop-width} {
@@ -51,8 +58,10 @@
   display: none;
 
   @media #{$desktop-width} {
+    margin: 0;
+    padding: 24px 0;
     display: block;
-    min-width: 135px;
+    width: 135px;
     font-size: 12px;
     line-height: 16px;
   }
