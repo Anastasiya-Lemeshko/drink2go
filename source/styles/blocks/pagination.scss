@@ -66,6 +66,8 @@
 .pagination__icon {
   flex-shrink: 0;
   fill: $accent-primary;
+  width: 10px;
+  height: 10px;
 
   @media #{$tablet-width} {
     display: none;
