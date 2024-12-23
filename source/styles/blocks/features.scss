@@ -61,10 +61,14 @@
   justify-items: center;
 
   @media #{$tablet-only} {
-    grid-template-rows: auto;
+    grid-auto-rows: min-content;
     grid-template-columns: 52px auto;
     gap: 10px 20px;
     justify-items: start;
+  }
+
+  @media #{$desktop-width} {
+    grid-auto-rows: min-content;
   }
 }
 
@@ -148,4 +152,8 @@
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.features__text + .features__text {
+  margin: 10px 0 0;
 }

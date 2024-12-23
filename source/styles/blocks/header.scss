@@ -25,16 +25,9 @@
 }
 
 .header__logo-wrapper {
-  padding: 12px 0;
-
-  @media #{$tablet-width} {
-    padding: 22px 7px 22px 0;
-  }
-
   @media #{$desktop-width} {
     display: flex;
     gap: 20px;
-    padding: 22px 0;
   }
 }
 
@@ -42,15 +35,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px 0;
   width: 32px;
   height: 36px;
 
   @media #{$tablet-only} {
     width: 82px;
+    padding: 22px 7px 22px 0;
   }
 
   @media #{$desktop-width} {
     width: 170px;
+    padding: 22px 0;
   }
 }
 
