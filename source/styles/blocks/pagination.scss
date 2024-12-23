@@ -16,6 +16,14 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media #{$tablet-width} {
+    max-width: 460px;
+  }
+
+  @media #{$desktop-width} {
+    max-width: 760px;
+  }
 }
 
 .pagination__link {

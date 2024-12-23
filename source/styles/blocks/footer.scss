@@ -48,6 +48,7 @@
 
 .footer__logo {
   display: block;
+  flex-shrink: 0;
 
   @media #{$desktop-width} {
     margin-bottom: 10px;
