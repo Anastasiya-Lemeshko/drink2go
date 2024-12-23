@@ -31,8 +31,19 @@
 }
 
 .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 36px;
+
   @media #{$tablet-only} {
+    width: 82px;
     padding-right: 7px;
+  }
+
+  @media #{$desktop-width} {
+    width: 170px;
   }
 }
 

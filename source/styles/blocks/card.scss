@@ -19,8 +19,11 @@
 }
 
 .card__image-wrapper {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 24px;
+  height: 188px;
 
   @media #{$tablet-width} {
     margin-bottom: 30px;
@@ -37,7 +40,10 @@
 }
 
 .card__image {
+  object-fit: contain;
   display: block;
+  max-width: 100%;
+  max-height: 188px;
   margin: 0 auto;
 }
 
