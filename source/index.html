@@ -209,68 +209,70 @@
           <section class="catalog__filter filter">
             <h3 class="visually-hidden">Фильтр.</h3>
             <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filter__group group">
-                <legend class="group__title">Цена</legend>
-                <div class="group__slider range">
-                  <div class="range__container"></div>
-                  <div class="range__inputs">
-                    <div class="range__price input-text">
-                      <label class="input-text__label visually-hidden" for="min-price">Минимальная цена</label>
-                      <input class="input-text__input input-text__input--min" type="number" name="min-price" placeholder="0" id="min-price">
-                    </div>
-                    <div class="range__price input-text">
-                      <label class="input-text__label visually-hidden" for="max-price">Максимальная цена</label>
-                      <input class="input-text__input input-text__input--max" type="number" name="max-price" placeholder="900" value="900" id="max-price">
+              <div class="filter__group-container">
+                <fieldset class="filter__group group">
+                  <legend class="group__title">Цена</legend>
+                  <div class="group__slider range">
+                    <div class="range__container"></div>
+                    <div class="range__inputs">
+                      <div class="range__price input-text">
+                        <label class="input-text__label visually-hidden" for="min-price">Минимальная цена</label>
+                        <input class="input-text__input input-text__input--min" type="number" name="min-price" placeholder="0" id="min-price">
+                      </div>
+                      <div class="range__price input-text">
+                        <label class="input-text__label visually-hidden" for="max-price">Максимальная цена</label>
+                        <input class="input-text__input input-text__input--max" type="number" name="max-price" placeholder="900" value="900" id="max-price">
+                      </div>
                     </div>
                   </div>
-                </div>
-              </fieldset>
-              <fieldset class="filter__group group">
-                <legend class="group__title">Наличие молока</legend>
-                <ul class="group__list group__list--has-milk">
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="radio" name="milk" id="no-matter" value="no-matter" checked>
-                    <label class="control__label" for="no-matter">Неважно</label>
-                  </li>
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="radio" name="milk" id="animal" value="animal">
-                    <label class="control__label" for="animal">Только животное</label>
-                  </li>
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="radio" name="milk" id="vegetable" value="vegetable">
-                    <label class="control__label" for="vegetable">Только растительное</label>
-                  </li>
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="radio" name="milk" id="without" value="without" disabled>
-                    <label class="control__label" for="without">Без молока</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="filter__group group">
-                <legend class="group__title">Страна произрастания</legend>
-                <ul class="group__list group__list--region">
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="brazil" id="brazil" checked>
-                    <label class="control__label control__label--toggle" for="brazil">Бразилия</label>
-                  </li>
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="ethiopia" id="ethiopia">
-                    <label class="control__label control__label--toggle" for="ethiopia">Эфиопия</label>
-                  </li>
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="colombia" id="colombia">
-                    <label class="control__label control__label--toggle" for="colombia">Колумбия</label>
-                  </li>
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="costa-rica" id="costa-rica">
-                    <label class="control__label control__label--toggle" for="costa-rica">Коста-Рика</label>
-                  </li>
-                  <li class="group__item group__item--control control">
-                    <input class="visually-hidden control__input" type="checkbox" name="peru" id="peru" disabled>
-                    <label class="control__label control__label--toggle" for="peru">Перу</label>
-                  </li>
-                </ul>
-              </fieldset>
+                </fieldset>
+                <fieldset class="filter__group group">
+                  <legend class="group__title">Наличие молока</legend>
+                  <ul class="group__list group__list--has-milk">
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="radio" name="milk" id="no-matter" value="no-matter" checked>
+                      <label class="control__label" for="no-matter">Неважно</label>
+                    </li>
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="radio" name="milk" id="animal" value="animal">
+                      <label class="control__label" for="animal">Только животное</label>
+                    </li>
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="radio" name="milk" id="vegetable" value="vegetable">
+                      <label class="control__label" for="vegetable">Только растительное</label>
+                    </li>
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="radio" name="milk" id="without" value="without" disabled>
+                      <label class="control__label" for="without">Без молока</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter__group group">
+                  <legend class="group__title">Страна произрастания</legend>
+                  <ul class="group__list group__list--region">
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="brazil" id="brazil" checked>
+                      <label class="control__label control__label--toggle" for="brazil">Бразилия</label>
+                    </li>
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="ethiopia" id="ethiopia">
+                      <label class="control__label control__label--toggle" for="ethiopia">Эфиопия</label>
+                    </li>
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="colombia" id="colombia">
+                      <label class="control__label control__label--toggle" for="colombia">Колумбия</label>
+                    </li>
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="costa-rica" id="costa-rica">
+                      <label class="control__label control__label--toggle" for="costa-rica">Коста-Рика</label>
+                    </li>
+                    <li class="group__item group__item--control control">
+                      <input class="visually-hidden control__input" type="checkbox" name="peru" id="peru" disabled>
+                      <label class="control__label control__label--toggle" for="peru">Перу</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
               <div class="filter__button-container">
                 <button class="filter__button button" type="submit">Применить</button>
                 <button class="filter__button button button--secondary" type="reset">Сбросить</button>
