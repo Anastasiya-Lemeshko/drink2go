@@ -1,7 +1,8 @@
-const sliderElement = document.querySelector('.range__container');
-const valueElement = document.querySelectorAll('.input-text__input');
-const valueMinElement = document.querySelector('.input-text__input--min');
-const valueMaxElement = document.querySelector('.input-text__input--max');
+const range = document.querySelector('.range');
+const sliderElement = range.querySelector('.range__container');
+const valueElement = range.querySelectorAll('.input-text__input');
+const valueMinElement = range.querySelector('.input-text__input--min');
+const valueMaxElement = range.querySelector('.input-text__input--max');
 
 const onSliderUpdate = () => {
  const valueArray = sliderElement.noUiSlider.get();

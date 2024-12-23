@@ -1,6 +1,7 @@
-const pages = document.querySelectorAll('.pagination__link');
-const buttonPrev = document.querySelector('.pagination__button--prev');
-const buttonNext = document.querySelector('.pagination__button--next');
+const pagination = document.querySelector('.pagination');
+const pages = pagination.querySelectorAll('.pagination__link');
+const buttonPrev = pagination.querySelector('.pagination__button--prev');
+const buttonNext = pagination.querySelector('.pagination__button--next');
 
 const isFirstPage = pages[0].classList.contains('pagination__link--current');
 const isLastPage = pages[pages.length - 1].classList.contains('pagination__link--current');

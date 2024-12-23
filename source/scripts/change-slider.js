@@ -1,10 +1,10 @@
-const bullitList = document.querySelector('.slider-pagination');
-const bullits = document.querySelectorAll('.slider-pagination__button');
-const sliderList = document.querySelector('.slider__list');
-const slides = document.querySelectorAll('.slider__item');
-const sliderPrev = document.querySelector('.slider-button-prev');
-const sliderNext = document.querySelector('.slider-button-next');
-const heroBg = document.querySelector('.hero');
+const hero = document.querySelector('.hero');
+const bullitList = hero.querySelector('.slider-pagination');
+const bullits = hero.querySelectorAll('.slider-pagination__button');
+const sliderList = hero.querySelector('.slider__list');
+const slides = hero.querySelectorAll('.slider__item');
+const sliderPrev = hero.querySelector('.slider-button-prev');
+const sliderNext = hero.querySelector('.slider-button-next');
 
 const changeSlider = () => {
   const setTabindex = () => {
@@ -66,8 +66,8 @@ const changeSlider = () => {
     setActiveBullet(newCurrentIndex);
     isSliderButtonDisabled(newCurrentIndex);
 
-    heroBg.classList = [`hero`];
-    heroBg.classList.add(`hero--${newCurrentIndex + 1}`)
+    hero.classList = [`hero`];
+    hero.classList.add(`hero--${newCurrentIndex + 1}`)
   });
 
   sliderNext.addEventListener('click', () => {
@@ -79,8 +79,8 @@ const changeSlider = () => {
     setActiveBullet(newCurrentIndex);
     isSliderButtonDisabled(newCurrentIndex);
 
-    heroBg.classList = [`hero`];
-    heroBg.classList.add(`hero--${newCurrentIndex + 1}`);
+    hero.classList = [`hero`];
+    hero.classList.add(`hero--${newCurrentIndex + 1}`);
   });
 };
 
