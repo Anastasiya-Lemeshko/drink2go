@@ -7,7 +7,7 @@
   background-color: $white;
 
   @media #{$mobile-only} {
-    border-bottom: 1px solid #{$accent-light};
+    border-bottom: 1px solid $accent-light;
     z-index: 5;
   }
 

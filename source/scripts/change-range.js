@@ -3,6 +3,7 @@ const sliderElement = range.querySelector('.range__container');
 const valueElement = range.querySelectorAll('.input-text__input');
 const valueMinElement = range.querySelector('.input-text__input--min');
 const valueMaxElement = range.querySelector('.input-text__input--max');
+const resetButton = document.querySelector('.filter__button--reset');
 
 const onSliderUpdate = () => {
  const valueArray = sliderElement.noUiSlider.get();
@@ -29,6 +30,10 @@ valueElement.forEach((element) => {
   element.addEventListener('change', () => {
     sliderElement.noUiSlider.set([valueMinElement.value, valueMaxElement.value]);
   });
+});
+
+resetButton.addEventListener('click', () => {
+  sliderElement.noUiSlider.reset();
 });
 
 export { createRange };

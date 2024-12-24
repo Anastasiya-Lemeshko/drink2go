@@ -91,6 +91,7 @@
 }
 
 .card__price {
+  max-width: 240px;
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
@@ -98,12 +99,14 @@
 
 .card__button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
   gap: 4px;
 }
 
 .card__button {
+  margin-left: auto;
   font-size: 14px;
   line-height: 20px;
 }
