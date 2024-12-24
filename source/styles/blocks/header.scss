@@ -79,21 +79,21 @@
   }
 }
 
-.header__user-nav--closed .user-nav__toggle {
+.header--mobile-menu-closed .user-nav__toggle {
   background-image: url("../../icons/stack.svg#burger");
 }
 
-.header__user-nav--opened .user-nav__toggle {
+.header--mobile-menu-opened .user-nav__toggle {
   background-image: url("../../icons/stack.svg#cross-mobile");
 }
 
-.header__user-nav--closed + .header__catalog-nav {
+.header--mobile-menu-closed .header__catalog-nav {
   @media #{$mobile-only} {
     display: none;
   }
 }
 
-.header__user-nav--opened + .header__catalog-nav {
+.header--mobile-menu-opened .header__catalog-nav {
   @media #{$mobile-only} {
     position: absolute;
     top: 61px;

@@ -1,17 +1,17 @@
 import { isEscapeKey } from './utils.js';
 
-const userNav = document.querySelector('.header__user-nav');
+const header = document.querySelector('.header');
 const burgerMenu = document.querySelector('.js-toggle-button');
 
 const openMobileMenu = () => {
-  userNav.classList.remove('header__user-nav--closed');
-  userNav.classList.add('header__user-nav--opened');
+  header.classList.remove('header--mobile-menu-closed');
+  header.classList.add('header--mobile-menu-opened');
   document.addEventListener('keydown', onDocumentKeydown);
 };
 
 const closeMobileMenu = () => {
-  userNav.classList.remove('header__user-nav--opened');
-  userNav.classList.add('header__user-nav--closed');
+  header.classList.remove('header--mobile-menu-opened');
+  header.classList.add('header--mobile-menu-closed');
   document.removeEventListener('keydown', onDocumentKeydown);
 };
 
@@ -24,7 +24,7 @@ function onDocumentKeydown(evt) {
 
 const toggleBurgerMenu = () => {
   burgerMenu.addEventListener('click', () => {
-    if (userNav.classList.contains('header__user-nav--opened')) {
+    if (header.classList.contains('header--mobile-menu-opened')) {
       closeMobileMenu();
     } else {
       openMobileMenu();

@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -18,7 +17,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
-  <header class="header" data-test="header">
+  <header class="header header--mobile-menu-closed" data-test="header">
     <nav class="header__navigation">
       <div class="header__logo-wrapper">
         <a class="header__logo logo-image" href="#">
@@ -30,7 +29,23 @@
         </a>
         <p class="header__logo-text">Интернет-магазин <br>кофейных напитков</p>
       </div>
-      <div class="header__user-nav user-nav header__user-nav--closed">
+      <div class="header__catalog-nav catalog-nav">
+        <ul class="catalog-nav__list">
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link catalog-nav__link--current" href="#">Главная</a>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="catalog-nav__item">
+            <a class="catalog-nav__link" href="#">О нас</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__user-nav user-nav">
         <ul class="user-nav__list">
           <li class="user-nav__item">
             <a class="user-nav__link" href="#">
@@ -52,22 +67,6 @@
             <button class="user-nav__toggle js-toggle-button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-          </li>
-        </ul>
-      </div>
-      <div class="header__catalog-nav catalog-nav">
-        <ul class="catalog-nav__list">
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link catalog-nav__link--current" href="#">Главная</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link" href="#">Каталог</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link" href="#">Доставка</a>
-          </li>
-          <li class="catalog-nav__item">
-            <a class="catalog-nav__link" href="#">О нас</a>
           </li>
         </ul>
       </div>
