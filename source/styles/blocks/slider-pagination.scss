@@ -39,4 +39,9 @@
 
 .slider-pagination__button--current {
   --button-color: #{$accent-primary};
+
+  &:focus-visible,
+  &:hover {
+    --button-color: #{$accent-primary};
+  }
 }

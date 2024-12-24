@@ -6,12 +6,28 @@ const buttonNext = pagination.querySelector('.pagination__button--next');
 const isFirstPage = pages[0].classList.contains('pagination__link--current');
 const isLastPage = pages[pages.length - 1].classList.contains('pagination__link--current');
 
-if (isFirstPage) {
-  buttonPrev.classList.add('pagination__button--hidden');
-} else if (isLastPage) {
-  buttonNext.classList.add('pagination__button--hidden');
-} else {
-  buttonPrev.classList.remove('pagination__button--hidden');
-  buttonNext.classList.remove('pagination__button--hidden');
-}
+const classToDisable = 'pagination__button--disabled';
+const classToHide = 'pagination__button--hidden';
 
+const checkPageNumber = (classToBlock) => {
+  if (isFirstPage) {
+    buttonPrev.classList.add(classToBlock);
+  } else if (isLastPage) {
+    buttonNext.classList.add(classToBlock);
+  } else {
+    buttonPrev.classList.remove(classToBlock);
+    buttonNext.classList.remove(classToBlock);
+  }
+};
+
+const blockPaginationButton = () => {
+  let totalWidth = window.screen.width;
+
+  if (totalWidth >= 768) {
+    checkPageNumber(classToHide);
+  } else {
+    checkPageNumber(classToDisable);
+  }
+};
+
+export { blockPaginationButton }

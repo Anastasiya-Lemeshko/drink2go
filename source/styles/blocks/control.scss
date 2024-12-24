@@ -114,5 +114,5 @@
 }
 
 .control__input:checked:disabled ~ .control__label--toggle {
-  --inner-bg: 2px solid #{$grey-basic};
+  --inner-bg: #{$grey-basic};
 }

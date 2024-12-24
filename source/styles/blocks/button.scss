@@ -34,7 +34,9 @@
 
 .button--disabled {
   background-color: $grey-basic;
+  color: $white;
   pointer-events: none;
+  cursor: default;
 }
 
 .button--secondary {

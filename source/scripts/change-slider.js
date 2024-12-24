@@ -29,7 +29,7 @@ const changeSlider = () => {
 
     document.querySelector('.slider__item--current').querySelectorAll('a').forEach((link) => {
       link.tabIndex = 0;
-    })
+    });
   }
 
   setTabindex();

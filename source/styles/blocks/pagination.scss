@@ -46,6 +46,14 @@
 .pagination__link--current {
   font-weight: 600;
   color: $text-basic;
+
+  &:focus-visible,
+  &:hover,
+  &:active {
+    color: $text-basic;
+    background-color: $white;
+    cursor: default;
+  }
 }
 
 .pagination__button {
@@ -71,6 +79,10 @@
   }
 }
 
+.pagination__button--disabled {
+  background-color: $grey-middle;
+}
+
 .pagination__icon {
   flex-shrink: 0;
   fill: $accent-primary;
@@ -84,7 +96,8 @@
 
 .pagination__button:focus-visible .pagination__icon,
 .pagination__button:hover .pagination__icon,
-.pagination__button:active .pagination__icon {
+.pagination__button:active .pagination__icon,
+.pagination__button--disabled .pagination__icon {
   fill: $white;
 }
 
