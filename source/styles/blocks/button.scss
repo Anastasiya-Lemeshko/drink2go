@@ -40,6 +40,10 @@
 .button--secondary {
   color: $accent-primary;
   background-color: $white;
+
+  &:disabled {
+    background-color: $grey-middle;
+  }
 }
 
 .button--with-icon {

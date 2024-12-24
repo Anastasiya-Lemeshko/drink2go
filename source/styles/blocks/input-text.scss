@@ -37,3 +37,9 @@
     border: 2px solid #{$grey-middle};
   }
 }
+
+.input-text__input::-webkit-outer-spin-button,
+.input-text__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}

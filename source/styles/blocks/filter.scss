@@ -33,7 +33,7 @@
 
   @media #{$tablet-only} {
     grid-template-columns: repeat(2, auto);
-    justify-self: center;
+    justify-content: center;
   }
 
   @media #{$desktop-width} {

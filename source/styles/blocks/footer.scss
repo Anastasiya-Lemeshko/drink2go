@@ -170,6 +170,7 @@
 
 .footer__contact--phone {
   background-image: url("../../icons/stack.svg#phone");
+  transition: color 0.3s;
 
   &:focus-visible,
   &:hover {

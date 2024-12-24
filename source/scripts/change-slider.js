@@ -55,6 +55,11 @@ const changeSlider = () => {
     setTabindex();
   };
 
+  const changeBg = (index) => {
+    hero.classList = [`hero`];
+    hero.classList.add(`hero--${index + 1}`);
+  };
+
   bullitList.addEventListener('click', (evt) => {
     if (evt.target.classList.contains('slider-pagination__button')) {
       const activeBullit = evt.target;
@@ -62,6 +67,8 @@ const changeSlider = () => {
       setActiveScreen(indexCurrentBullit);
       shiftSlider(indexCurrentBullit);
       setActiveBullet(indexCurrentBullit);
+      isSliderButtonDisabled(indexCurrentBullit);
+      changeBg(indexCurrentBullit);
     }
   });
 
@@ -73,9 +80,7 @@ const changeSlider = () => {
     shiftSlider(newCurrentIndex);
     setActiveBullet(newCurrentIndex);
     isSliderButtonDisabled(newCurrentIndex);
-
-    hero.classList = [`hero`];
-    hero.classList.add(`hero--${newCurrentIndex + 1}`)
+    changeBg(newCurrentIndex);
   });
 
   sliderNext.addEventListener('click', () => {
@@ -86,9 +91,7 @@ const changeSlider = () => {
     shiftSlider(newCurrentIndex);
     setActiveBullet(newCurrentIndex);
     isSliderButtonDisabled(newCurrentIndex);
-
-    hero.classList = [`hero`];
-    hero.classList.add(`hero--${newCurrentIndex + 1}`);
+    changeBg(newCurrentIndex);
   });
 };
 
