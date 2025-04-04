@@ -59,6 +59,8 @@
 
   &:disabled {
     --icon-fill: #{$grey-basic};
+    background: none;
+    cursor: default;
   }
 }
 

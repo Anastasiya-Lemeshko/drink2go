@@ -253,7 +253,6 @@
     └── fonts/
         ├──  open-sans.woff2
         └──  open-sans-bold.woff2
-
 ```
 
 ## Работа со скриптами
