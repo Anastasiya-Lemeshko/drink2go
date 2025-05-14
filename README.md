@@ -4,7 +4,7 @@
 
 *Проект, выполненный в рамках «Грейдирования» HTML Academy. На выполнение проекта дается одна неделя, цель - оценить свои знания и навыки.*
 
-![main-page](https://github.com/Anastasiya-Lemeshko/drink2go/blob/master/source/images/readme/hero.gif)
+<img src="source/images/readme/hero.jpg" alt="Hero drink2go.">
 
 ## 💡 Обзор выполненных задач
 
