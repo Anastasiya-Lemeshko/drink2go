@@ -24,6 +24,8 @@
   &:focus-visible,
   &:hover {
     --button-color: #{$accent-opacity};
+
+    outline: none;
   }
 
   &:active {
