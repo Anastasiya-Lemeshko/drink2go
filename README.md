@@ -45,7 +45,7 @@
 
 ## 📌 Ссылка на проект
 
-anastasiya-lemeshko.github.io/drink2go/
+https://anastasiya-lemeshko.github.io/drink2go/
 
 
 ## 🚀 Установка и запуск:
